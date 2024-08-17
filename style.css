@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* Organiza el contenido en una columna */
+    align-items: center;
+    justify-content: center;
+    /* Centra el contenido verticalmente */
+    background-image: url(portada1.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    background-color: rgba(240, 248, 255, 0.9);
+    /* Azul Alice con opacidad */
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: rgb(3, 55, 122);
+    /* Tomato, un tono rojo anaranjado suave */
+    margin-bottom: 10px;
+}
+
+label,
+p {
+    font-size: 17px;
+    color: #2F4F4F;
+    /* Dark Slate Gray, un gris oscuro que no es demasiado fuerte */
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 17px 11px;
+    border: 1px solid #4682B4;
+    /* Steel Blue, un azul medio que combina con el agua */
+    border-radius: 25px;
+    margin-bottom: 25px;
+    background-color: #F0F8FF;
+    /* Azul Alice, para mantener la suavidad */
+    outline: none;
+    color: #4682B4;
+    /* Steel Blue para el texto */
+    font-size: 16px;
+}
+
+.btn-1 {
+    background-color: dodgerblue;
+    /* Coral, un naranja suave */
+    font-size: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-1:hover {
+    background-color: #FF4500;
+    /* Orange Red, para un hover más llamativo */
+}
+
+.remember {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+/* Estilos para el footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    color: #888;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Fondo blanco con 50% de opacidad */
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    /* Línea superior blanca con 80% de opacidad */
+    width: 100%;
+    position: absolute;
+    /* Posiciona el footer al final de la ventana */
+    bottom: 0;
+    /* Alinea el footer en la parte inferior */
+}
+
+/* Estilos para los enlaces del footer */
+.footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* 
+Responsive */
+@media(max-width: 991px) {
+    body {
+        padding: 30px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .remember {
+        flex-direction: column;
+    }
+}
